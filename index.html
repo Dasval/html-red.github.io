@@ -60,20 +60,39 @@
         button:hover {
             background: var(--tg-theme-secondary-bg-color);
         }
+
+        #form {
+            display: none;
+            text-align: centre;
+        }
+
+        input {
+            width: 90%;
+            outline: none;
+            margin: 10px 5%;
+            padding: 15px 10px;
+            font-size: 14px;
+            border: 2px solid silver;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            border-color: #db5d5d;
+        }
     </style>
 </head>
 <body>
     <div id="main">
-        <h1>Online shop</h1>
+        <h1>Онлайн магазин</h1>
         <img src="https://i.postimg.cc/3R3m8dvN/ava-gh.png">
-        <p>Something interesting</p>
-        <button id="buy">Buy</button>
+        <p>Здесь могла быть Ваша реклама</p>
+        <button id="buy">Купить</button>
     </div>
     <form id="form">
-        <input type="text" placeholder="First name" id="user_name">
+        <input type="text" placeholder="Имч" id="user_name">
         <input type="text" placeholder="Email" id="user_email">
-        <input type="text" placeholder="Your phone number" id="user_phone">
-        <button id="order">Registra111</button>
+        <input type="text" placeholder="Телефон" id="user_phone">
+        <button id="order">Оформить</button>
     </form>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
